@@ -1,5 +1,5 @@
-CREATE SCHEMA IF NOT EXISTS `TrabBdD8` DEFAULT CHARACTER SET utf8;
-USE `TrabBdD8`;
+CREATE SCHEMA IF NOT EXISTS `TrabBD8` DEFAULT CHARACTER SET utf8;
+USE `TrabBD8`;
 
 CREATE TABLE IF NOT EXISTS `UnidadeFederacao` (
     `siglaUF` CHAR(2) NOT NULL,
@@ -87,8 +87,7 @@ CREATE TABLE IF NOT EXISTS `ItemPedidoVenda` (
     PRIMARY KEY (`Produto_codProduto`, `PedidoVenda_nroPedido`),
     FOREIGN KEY (`Produto_codProduto`) REFERENCES `Produto`(`codProduto`),
     FOREIGN KEY (`PedidoVenda_nroPedido`) REFERENCES `PedidoVenda`(`nroPedido`)
-)CREATE SCHEMA IF NOT EXISTS `TrabBdD8` DEFAULT CHARACTER SET utf8;
-USE `TrabBdD8`;
+);
 
 CREATE TABLE IF NOT EXISTS `UnidadeFederacao` (
     `siglaUF` CHAR(2) NOT NULL,
