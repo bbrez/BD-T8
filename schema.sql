@@ -160,13 +160,6 @@ CREATE TABLE IF NOT EXISTS `PedidoVenda` (
     FOREIGN KEY (`Endereco_idEndereco`) REFERENCES `Endereco`(`idEndereco`)
  );
 
-CREATE TABLE IF NOT EXISTS `Produto` (
-    `codProduto` INT NOT NULL AUTO_INCREMENT,
-    `nomeProduto` VARCHAR(45) NOT NULL,
-    `precoProduto` DOUBLE NOT NULL,
-    PRIMARY KEY (`codProduto`)
-);
-
 CREATE TABLE IF NOT EXISTS `ItemPedidoVenda` (
     `qtdeVenda` INT NOT NULL,
     `PrecoVenda` DOUBLE NOT NULL,
