@@ -75,6 +75,7 @@ CREATE TABLE IF NOT EXISTS `Produto` (
     `codProduto` INT NOT NULL AUTO_INCREMENT,
     `nomeProduto` VARCHAR(45) NOT NULL,
     `precoProduto` DOUBLE NOT NULL,
+    `qtdeEstoque` INT NOT NULL,
     PRIMARY KEY (`codProduto`)
 );
 
